@@ -49,7 +49,7 @@ class TodosList
   end
 
   def to_displayable_list
-    @todos.map { |todo| todo.to_displayable_string() }.join("\n")
+    @todos.map { |todo| @todos.to_displayable_string() }.join("\n")
   end
 end
 
